@@ -1,0 +1,11 @@
+{
+  "name": "dom-manipulation",
+  "version": "1.0.0",
+  "description": "dom manipulation with javascript and basic css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush jain",
+  "license": "ISC"
+}
