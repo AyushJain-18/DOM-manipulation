@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23221832' fill-opacity='0.06'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Ranchers', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 40px;
+
+}
+
+/* loader container */
+.loaderContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+
+}
+/* defining an animation here for spin which will rotate it from 0deg to 360 deg */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* loader */
+.loader{
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.contentContainer{
+    margin: 20vh 15vw ;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+.content{
+    padding: 30px;
+    height: fit-content;
+}
+.textColor{
+    color: dodgerblue
+}
+.authorAndBtnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 200px;
+}
+.author{
+    color: cadetblue;
+}
+.buttonContainer{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:red;
+}
+
+/* share button  */
+.fa-share-alt:hover{
+    cursor: pointer;
+    color: blue;
+}
+.fa-share-alt:active{
+    transform: translate(0, 0.3rem);
+}
+
+
+/* quote generator */
+.quote-generator{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px red;
+}
+.quote-generator:hover{
+    cursor: pointer;
+    color: blue;
+    box-shadow: 2px 2px 5px blue;
+}
+.quote-generator:active{
+    transform: translate(0, 0.3rem);
+}
+
+@media screen and (max-width: 600px){
+    .contentContainer{
+        margin: 5vh 5vw ;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .authorAndBtnContainer{
+        margin-top: 10px;
+    }
+    .buttonContainer{
+        width: 60vw;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: blue;
+    }
+}

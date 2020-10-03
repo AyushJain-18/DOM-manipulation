@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoute Generator</title>
+    
+<link rel='icon' href='../home.svg' type='image/x-icon'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <div class="contentContainer" id="quote-container">
+                    <div class= "content">
+                            <!-- left Quotation -->
+                            <i class="fa fa-quote-left" aria-hidden="true" aria-label="left-qoutation mark"></i>
+                            <!-- content -->
+                            <span class="textColor" id='qoute-text'> Random Qoute</span>
+                    </div>
+                 <div class="authorAndBtnContainer">
+                     <!-- author -->
+                    <div class='author'>
+                        <span>Author : </span>
+                        <span  id ="author">Budha</span>
+                    </div>
+                    <!-- button -->
+                   <div class= 'buttonContainer'>
+                     <i class="fa fa-share-alt" aria-hidden="true" id="tweet-button"></i>
+                     <div  class="quote-generator" id="qoute-generator" onclick={loadDataToUI()}> Generate New Qoute</div>
+                   </div>
+                </div>
+
+                
+        </div>
+        <div class="loaderContainer" id='loader'>
+                 <div class='loader'></div>
+        </div>
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
