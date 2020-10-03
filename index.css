@@ -5,4 +5,104 @@ html{
 body{
     margin: 0;
     height: 100vh;
+    font-family: 'Ranchers', cursive;
+}
+.header{
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 4rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: brown;
+  
+}
+.headerContainer{
+    margin: 5% 10% 1%;
+    border: solid 5px #3c0000;
+    display: flex;
+    box-shadow: 10px 3px 5px rebeccapurple;
+    font-size: 2.5rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: cadetblue;
+}
+.headerName{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+}
+.headerLink{
+    width:  60% ;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.projectDataConatiner{
+    margin: 1% 10%;
+    border: solid 5px #3c0000;
+    display: flex;
+    box-shadow: 10px 10px 5px rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.eachProject{
+    display: flex;
+    flex-direction: row;
+}
+.projectName{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: blueviolet;
+}
+.projectLink{
+    width:  60% ;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: deepskyblue;
+}
+.projectLink:hover{
+    cursor: pointer;
+    color: rgb(0, 173, 231);
+}
+
+@media (min-width: 600px)and (max-width: 900px){
+    .header{  
+        font-size: 3rem;
+    }
+    .headerContainer{
+        font-size: 1.75rem;
+    }
+    .projectDataConatiner{
+        font-size: 1.25rem;
+    }   
+}
+@media (max-width: 600px){
+    .header{  
+        font-size: 2.5rem;
+    }
+    .headerContainer{
+        font-size: 1.25rem;
+    }
+    .projectDataConatiner{
+        font-size: .8rem;
+    }   
 }
