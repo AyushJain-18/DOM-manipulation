@@ -60,23 +60,26 @@ body{
     letter-spacing: 2px;
 }
 .eachProject{
+    width: 100%;
+    margin: 20px 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.projectName{
-    width: 40%;
+.sno{
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: blueviolet;
 }
+.projectName{
+    width: 40%;
+    padding: 20px;
+    color: blueviolet;
+}
 .projectLink{
     width:  60% ;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     color: deepskyblue;
 }
 .projectLink:hover{
@@ -93,7 +96,11 @@ body{
     }
     .projectDataConatiner{
         font-size: 1.25rem;
-    }   
+    }
+    .eachProject    { margin: 20px 0px;}
+    .sno            {  padding: 10px; }
+    .projectName    { padding: 10px;   }
+    .projectLink    { flex-wrap: wrap;}
 }
 @media (max-width: 600px){
     .header{  
@@ -104,5 +111,9 @@ body{
     }
     .projectDataConatiner{
         font-size: .8rem;
-    }   
+    }
+    .eachProject    { margin: 15px 0px;}   
+    .sno            {  padding: 5px; }
+    .projectName    { padding: 5px;   }
+    .projectLink     { flex-wrap: wrap;}
 }
