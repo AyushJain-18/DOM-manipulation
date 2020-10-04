@@ -64,22 +64,20 @@ body{
     margin: 20px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .sno{
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     color: blueviolet;
 }
 .projectName{
-    width: 40%;
     padding: 20px;
+    min-width: 20%;
+    margin-right: 5%;
     color: blueviolet;
 }
 .projectLink{
-    width:  60% ;
+    margin-right: 5%;
     color: deepskyblue;
 }
 .projectLink:hover{

@@ -1,5 +1,4 @@
-let projectLink1 = document.getElementById('projectlink1');
-
+let eachProject = document.querySelectorAll('#eachProject');
 
 function openLinkInNewTab(element){
     if(event.type ===  "keydown"){
@@ -12,8 +11,24 @@ function openLinkInNewTab(element){
     }
 }
 
-// Event listener click event 
-projectLink1.addEventListener('click', ()=>openLinkInNewTab(projectLink1));
+function addEventListenerForAllLinks(){
+    for(let index=0; index<eachProject.length; index++){
+        if(eachProject[index]);
+        let eachProjectChildren = eachProject[index].children;
+        if(eachProjectChildren){
+            let linkElememt = eachProjectChildren[2];
+            addListeneres(linkElememt);
+        }
+    }
+}
 
-// Event listener keydown event 
-projectLink1.addEventListener('keydown', ()=>openLinkInNewTab(projectLink1));
+function addListeneres(element){
+    // Event listener click event 
+    element.addEventListener('click', ()=>openLinkInNewTab(element));
+
+    // Event listener keydown event 
+    element.addEventListener('keydown', ()=>openLinkInNewTab(element));
+}
+
+addEventListenerForAllLinks();
+
