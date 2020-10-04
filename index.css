@@ -107,13 +107,15 @@ body{
         font-size: 2.5rem;
     }
     .headerContainer{
+        margin: 5% 5% 1%;
         font-size: 1.25rem;
     }
     .projectDataConatiner{
         font-size: .8rem;
+        margin: 1% 5%;
     }
     .eachProject    { margin: 15px 0px;}   
     .sno            {  padding: 5px; }
-    .projectName    { padding: 5px;   }
+    .projectName    { padding: 5px; padding-right: 10px; min-width: 70px;   }
     .projectLink     { flex-wrap: wrap;}
 }
