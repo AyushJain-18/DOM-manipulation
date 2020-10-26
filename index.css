@@ -9,7 +9,7 @@ body{
 }
 .header{
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 2vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -83,6 +83,120 @@ body{
 .projectLink:hover{
     cursor: pointer;
     color: rgb(0, 173, 231);
+}
+
+.specialButtons{
+    display         : flex;
+    flex-direction  : row;
+    justify-content :space-between ;
+    width           : 80%;
+    margin: 20px auto 0px;
+}
+
+.specialEffectButtonContainerNext{
+    cursor      : pointer;
+    position    : relative;
+    padding     : 0px;
+    color       : antiquewhite;
+    font-size   : .8rem ;
+    font-family : 'Actor', sans-serif;
+    font-weight : 500;
+    height      : 47px;
+    min-width   : -webit-fit-content;
+    min-width   : -moz-fit-content;
+    min-width   : fit-content ;
+
+    background-color    : cornflowerblue ;
+    position            : relative;
+    transition          : all .2s ease-out;
+    border              : transparent;
+    background          : linear-gradient(60deg, antiquewhite 50%, cornflowerblue 0);
+    background-size     : 300% 100% ;  /* this is used to specify background size   */
+    background-position : 100% 100% ; /* here we have to mention x and y co-ordinate  */
+    
+}
+
+
+.specialEffectButtonContainerPrevious{
+    cursor      : pointer;
+    position    : relative;
+    padding     : 0px;
+    color       :antiquewhite;
+    font-size   : .8rem ;
+    font-family : 'Actor', sans-serif;
+    font-weight : 500;
+    height      : 47px;
+    min-width   : -webit-fit-content;
+    min-width   : -moz-fit-content;
+    min-width   : fit-content ;
+
+    background-color    : cornflowerblue ;
+    position            : relative;
+    transition          : all .2s ease-out;
+    border              : transparent;
+    background          : linear-gradient(300deg, antiquewhite 50%, cornflowerblue 0);
+    background-size     : 300% 100% ;  /* this is used to specify background size   */
+    background-position : 0% 100% ; /* here we have to mention x and y co-ordinate  */
+}
+
+.buttonContentContainer{
+    display         : flex;
+    height          : 100%;
+    flex-wrap       : nowrap;
+    justify-content : center;
+    align-items     : center;
+}
+.buttonContent{
+    max-width       : 75px;
+    height          : auto;
+    max-height      : 47px;
+    padding         : 14px;
+    font-size       : 1rem ;
+    font-weight     : bold ;
+}
+.presentation{
+    height          : 45px;
+    margin          : 0;
+    border          : .1px solid white;
+    color           : white;
+}
+.iconContainer{
+    padding         : 14px ;
+}
+.shortArrow{
+        color       :  antiquewhite
+}
+.longArrow{
+    display             : none;
+}
+
+/* Hover effect */
+
+
+.specialEffectButtonContainerNext:hover{
+    background-position: left bottom;
+    color:cornflowerblue;    
+}
+.specialEffectButtonContainerPrevious:hover{
+    background-position: right bottom;
+    color:cornflowerblue; 
+}
+.specialEffectButtonContainerNext:hover .iconContainer,.specialEffectButtonContainerPrevious:hover .iconContainer{
+    padding             : 14px;
+}
+.specialEffectButtonContainerNext:hover .shortArrow, .specialEffectButtonContainerPrevious:hover .shortArrow{
+    display             : none;
+}
+.specialEffectButtonContainerNext:hover .longArrow, .specialEffectButtonContainerPrevious:hover .longArrow{
+    display             : block;
+    color               : cornflowerblue;  
+}
+
+.specialEffectButtonContainerPrevious :active{
+    transform:  scale(0.9);
+}
+.specialEffectButtonContainerNext :active{
+    transform:  scale(0.9);
 }
 
 @media (min-width: 600px)and (max-width: 900px){
