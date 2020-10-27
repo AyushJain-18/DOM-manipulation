@@ -107,8 +107,17 @@ function onButtonClick(button){
             clickedButton.innerText = 'End';
           });
         videoElement.addEventListener('leavepictureinpicture', () => {
-            let buttonName = clickedButton.id === applicationButton.id ? 'Application' : 'Webcam'
+            let buttonName = clickedButton.id === applicationButton.id ? 'Application' : 'Webcam';
+            isApplicationButtonActive = false;
+            isWebNuttonActive = false;
             clickedButton.innerText = `Display ${buttonName} feed in Picture-in-Picture mode`;
+            if( clickedButton.id === applicationButton.id){
+                webCambutton.classList.remove('buttonDisabled');
+                webCambutton.classList.add('button');
+            }else{
+                applicationButton.classList.remove('buttonDisabled');
+                applicationButton.classList.add('button');
+            }
             stopSharing(mediaStream);
           });
 })();
