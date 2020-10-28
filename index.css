@@ -6,7 +6,30 @@ body{
     margin: 0;
     height: 100vh;
     font-family: 'Ranchers', cursive;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
+/* carousel CSS start */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  }
+
+/* carousel CSS end */
+
+/* Main Header */
 .header{
     width: 100%;
     padding-top: 2vh;
@@ -20,8 +43,10 @@ body{
     color: brown;
   
 }
+/* sub header */
 .headerContainer{
-    margin: 2% 10% 1%;
+    margin: 4% 10vw 2%;
+    width : 80vw;
     border: solid 5px #3c0000;
     display: flex;
     box-shadow: 10px 3px 5px rebeccapurple;
@@ -47,8 +72,19 @@ body{
     justify-content: center;
    
 }
+/* carousel container */
+.carouselContainer{
+    display     : flex; 
+    /* margin      : 0px 10%;
+    white-space : nowrap;
+    overflow: auto;
+    scroll-snap-type: x mandatory; */
+
+}
 .projectDataConatiner{
-    margin: 1% 10%;
+    /* scroll-snap-align: center; */
+    min-width: 80vw;
+    margin: 0px 10vw;
     border: solid 5px #3c0000;
     display: flex;
     box-shadow: 10px 10px 5px rebeccapurple;
@@ -85,12 +121,13 @@ body{
     color: rgb(0, 173, 231);
 }
 
+/* buttons */
 .specialButtons{
     display         : flex;
     flex-direction  : row;
     justify-content :space-between ;
     width           : 80%;
-    margin: 20px auto 0px;
+    margin: 40px auto 0px;
 }
 
 .specialEffectButtonContainerNext{
@@ -199,6 +236,8 @@ body{
     transform:  scale(0.9);
 }
 
+
+
 @media (min-width: 600px)and (max-width: 900px){
     .header{  
         font-size: 3rem;
@@ -217,14 +256,18 @@ body{
 @media (max-width: 600px){
     .header{  
         font-size: 2.5rem;
+        margin: 10% 0px;
     }
     .headerContainer{
-        margin: 5% 5% 1%;
+        margin: 5% 10vw 3%;
         font-size: 1.25rem;
     }
     .projectDataConatiner{
         font-size: .8rem;
-        margin: 1% 5%;
+        margin: 0px 10vw;
+    }
+    .specialButtons{
+        margin-top: 50px ;
     }
     .eachProject    { margin: 15px 0px;}   
     .sno            {  padding: 5px; }
