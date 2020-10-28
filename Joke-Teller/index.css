@@ -1,0 +1,94 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: #45badd;
+   
+}
+.container{
+        width: 100vw;
+        display: flex;
+        
+}
+
+.jokeTeller{
+    cursor              : pointer;
+    height              : 100vh;
+    width               : 50% ;
+    background          : url(./giphy.gif);
+    background-repeat   : no-repeat;
+    background-position : left center;
+    background-size     : contain;
+}
+
+.buttonContainer{
+    cursor          : pointer;
+    position        : relative;
+    font-size       : 2rem;
+    font-weight     : 800;
+    padding         : 0px 10px;
+    align-self      : center;
+    min-width       : fit-content ;
+    height          : 50px;
+    color           : ghostwhite;
+    transition      : all .2s ease-out;
+    border          : transparent;
+    background      : linear-gradient(60deg, ghostwhite 50%, #ff3482 0% );
+    background-position     : 100% 100% ;
+    background-size         : 300% 100% ;
+}
+.flexContainer{
+    height          : inherit;
+    width           : inherit ;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : center;
+}
+.presentation{
+    height  : inherit;
+    color   : white;
+    border  :.1px solid white;
+    margin  : 0px 10px; 
+}
+.regularIcon{
+    display: block;
+}
+.solidIcon{
+    display: none;
+}
+.buttonContainer:hover{
+    background-position : left bottom;
+    color: #ff3482;
+}
+.buttonContainer:hover .presentation{
+    color: #ff3482;
+    border  :.1px solid #ff3482;
+}
+.buttonContainer:hover .regularIcon{
+    display: none;
+}
+.buttonContainer:hover .solidIcon{
+    display: block;
+}
+.buttonContainer:active{
+    transform: scale(0.9);
+}
+.buttonDisabledStyles{
+    filter: brightness(0.6);
+    cursor: not-allowed;
+}
+
+@media(max-width: 750px){
+    .container{
+       flex-direction: column; 
+    }
+    .jokeTeller{
+        width   : 100%;
+        height  : 60vh;
+        background-position: center;
+    }
+}

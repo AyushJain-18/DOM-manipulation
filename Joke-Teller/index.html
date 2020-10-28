@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Teller</title>
+    
+    <link rel='icon' href='../home.svg' type='image/x-icon'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <div class='container'>
+            <div class='jokeTeller' id='jokeTellerImage'></div>
+            <div class='buttonContainer' id ='button'>
+                <div class='flexContainer'>
+                    <div class='textContent'> Tell a Joke</div>
+                    <hr class='presentation'>
+                    <div class ='iconContainer'>
+                        <i class="far fa-play-circle regularIcon"></i>
+                        <i class="fas fa-play-circle solidIcon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio controls hidden id='audio'></audio>
+    <!-- Script -->
+    <script src="./voiceRSS.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
