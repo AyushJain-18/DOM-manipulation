@@ -1,0 +1,22 @@
+:root{
+    --mouse-x: 0;
+    --mouse-y: 0;
+}
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.box{
+    top: calc(var(--mouse-y) - 25px);
+    left: calc(var(--mouse-x) - 25px);
+    width   : 50px;
+    height  : 50px;
+    background-color: lightslategray;
+    position: absolute;
+}
