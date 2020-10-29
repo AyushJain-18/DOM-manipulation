@@ -17,31 +17,31 @@ let projectData =[
     {
         sno          : 4,
         projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Joke-Teller/'
     },
     {
         sno          : 5,
         projectName  : 'Ligh Dark Theme',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Light-Dark-Mode/'
     },
     {
         sno          : 6,
-        projectName  : 'Mouse Mover',
+        projectName  : 'Math Sprint game',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 7,
-        projectName  : 'Qoute Generator',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Qoute-Generator/'
+        projectName  : 'Mouse Mover',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/moveMover/'
     },
     {
         sno          : 8,
-        projectName  : 'Infinite Scroll',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Infinite-Scroll/'
+        projectName  : 'Scroll Animation',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/animated-template/'
     },
     {
         sno          : 9,
-        projectName  : 'Picture in Picture',
+        projectName  : 'Custum Navbar',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
