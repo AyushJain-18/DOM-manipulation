@@ -21,41 +21,41 @@ let projectData =[
     },
     {
         sno          : 5,
-        projectName  : 'Joke Teller',
+        projectName  : 'Ligh Dark Theme',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 6,
-        projectName  : 'Joke Teller',
+        projectName  : 'Mouse Mover',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
-        sno          : 1,
+        sno          : 7,
         projectName  : 'Qoute Generator',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Qoute-Generator/'
     },
     {
-        sno          : 2,
+        sno          : 8,
         projectName  : 'Infinite Scroll',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Infinite-Scroll/'
     },
     {
-        sno          : 3,
+        sno          : 9,
         projectName  : 'Picture in Picture',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
-        sno          : 4,
+        sno          : 10,
         projectName  : 'Joke Teller',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
-        sno          : 5,
+        sno          : 11,
         projectName  : 'Joke Teller',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
-        sno          : 6,
+        sno          : 12,
         projectName  : 'Joke Teller',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     }
