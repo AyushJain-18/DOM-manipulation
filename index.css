@@ -6,7 +6,6 @@ body{
     margin: 0;
     height: 100vh;
     font-family: 'Ranchers', cursive;
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 /* carousel CSS start */
@@ -32,7 +31,7 @@ body{
 /* Main Header */
 .header{
     width: 100%;
-    padding-top: 2vh;
+    padding-top: 1vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -45,7 +44,7 @@ body{
 }
 /* sub header */
 .headerContainer{
-    margin: 4% 10vw 2%;
+    margin: 2% 10vw 1%;
     width : 80vw;
     border: solid 5px #3c0000;
     display: flex;
@@ -128,7 +127,7 @@ body{
     flex-direction  : row;
     justify-content :space-between ;
     width           : 80%;
-    margin: 40px auto 0px;
+    margin: 40px auto;
 }
 
 .specialEffectButtonContainerNext{
@@ -268,7 +267,7 @@ body{
         margin: 0px 10vw;
     }
     .specialButtons{
-        margin-top: 50px ;
+        margin: 50px auto;
     }
     .eachProject    { margin: 15px 0px;}   
     .sno            {  padding: 5px; }
