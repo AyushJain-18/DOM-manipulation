@@ -114,6 +114,7 @@ body{
 }
 .projectLink{
     margin-right: 5%;
+    padding: 20px 0px; 
     color: deepskyblue;
 }
 .projectLink:hover{
@@ -251,7 +252,7 @@ body{
     .eachProject    { margin: 20px 0px;}
     .sno            {  padding: 10px; }
     .projectName    { padding: 10px;   }
-    .projectLink    { flex-wrap: wrap;}
+    .projectLink    { flex-wrap: wrap; padding: 10px 0px; }
 }
 @media (max-width: 600px){
     .header{  
@@ -272,5 +273,5 @@ body{
     .eachProject    { margin: 15px 0px;}   
     .sno            {  padding: 5px; }
     .projectName    { padding: 5px; padding-right: 10px; min-width: 70px;   }
-    .projectLink     { flex-wrap: wrap;}
+    .projectLink     { flex-wrap: wrap; padding: 5px 0px;}
 }

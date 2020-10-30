@@ -31,34 +31,34 @@ let projectData =[
     },
     {
         sno          : 7,
-        projectName  : 'Mouse Mover',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/moveMover/'
+        projectName  : 'Joke Teller',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 8,
-        projectName  : 'Scroll Animation',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/animated-template/'
+        projectName  : 'Joke Teller',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 9,
-        projectName  : 'Custum Navbar',
+        projectName  : 'Joke Teller',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 10,
-        projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectName  : 'Navigation Hamburger',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/navigation-hamburger/'
     },
     {
         sno          : 11,
-        projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectName  : 'Scroll Animation',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/animated-template/'
     },
     {
         sno          : 12,
-        projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
-    }
+        projectName  : 'Mouse Mover',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/moveMover/'
+    },
 ]
 
 let eachProject         = document.querySelectorAll('#eachProject');
