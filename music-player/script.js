@@ -130,6 +130,7 @@
     prev.addEventListener('click',()=>toogleSong(decrementSong));
     // audio update time
     audio.addEventListener('timeupdate',updateProgressTime);
+    audio.addEventListener('ended',()=>toogleSong(incrementSong))
     // progress bar
     progressContainer.addEventListener('click',updateAudioTrackOnClickOfProgressBar)
     // on load event
