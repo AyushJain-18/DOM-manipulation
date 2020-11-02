@@ -79,11 +79,11 @@ body{
 }
 
 /* share button  */
-.fa-share-alt:hover{
+.fa-twitter:hover{
     cursor: pointer;
     color: blue;
 }
-.fa-share-alt:active{
+.fa-twitter:active{
     transform: translate(0, 0.3rem);
 }
 
