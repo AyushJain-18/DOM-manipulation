@@ -1,8 +1,8 @@
 let projectData =[
     {
         sno          : 1,
-        projectName  : 'Qoute Generator',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Qoute-Generator/'
+        projectName  : 'Bookmark',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/bookMark/'
     },
     {
         sno          : 2,
@@ -31,8 +31,8 @@ let projectData =[
     },
     {
         sno          : 7,
-        projectName  : 'Bookmark',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/bookMark/'
+        projectName  : 'Qoute Generator',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Qoute-Generator/'
     },
     {
         sno          : 8,
