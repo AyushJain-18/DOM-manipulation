@@ -6,56 +6,51 @@ let projectData =[
     },
     {
         sno          : 2,
-        projectName  : 'Infinite Scroll',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Infinite-Scroll/'
+        projectName  : 'CountDown',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/custom-countdown/'
     },
     {
         sno          : 3,
-        projectName  : 'Picture in Picture',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
-    },
-    {
-        sno          : 4,
-        projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Joke-Teller/'
-    },
-    {
-        sno          : 5,
         projectName  : 'Ligh Dark Theme',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Light-Dark-Mode/'
     },
     {
+        sno          : 4,
+        projectName  : 'Music player',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/music-player/'
+    },
+    {
+        sno          : 5,
+        projectName  : 'Video Player',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Video-player/'
+    },
+    {
         sno          : 6,
-        projectName  : 'Math Sprint game',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectName  : 'Infinite Scroll',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Infinite-Scroll/'
     },
     {
         sno          : 7,
-        projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectName  : 'Bookmark',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/bookMark/'
     },
     {
         sno          : 8,
         projectName  : 'Joke Teller',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Joke-Teller/'
     },
     {
         sno          : 9,
-        projectName  : 'Joke Teller',
+        projectName  : 'Picture in Picture',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Picture-in-Picture/'
     },
     {
         sno          : 10,
-        projectName  : 'Navigation Hamburger',
+        projectName  : 'Navigation \n Hamburger',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/navigation-hamburger/'
     },
     {
         sno          : 11,
-        projectName  : 'Scroll Animation',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/animated-template/'
-    },
-    {
-        sno          : 12,
         projectName  : 'Mouse Mover',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/moveMover/'
     },
@@ -65,7 +60,7 @@ let eachProject         = document.querySelectorAll('#eachProject');
 let projectContainer    = document.getElementById('carouselContainer');
 let previousButton      = document.getElementById('previousButton'); 
 let nextButton          = document.getElementById('nextButton');
-let totalNumberOfSlides = Math.ceil(projectData.length/3);
+let totalNumberOfSlides = Math.ceil(projectData.length/5);
 let currentSlideNumber  = 1;
 function openLinkInNewTab(element){
     if(event.type ===  "keydown"){
@@ -122,11 +117,11 @@ function createProjectContainer(){
     for(let index =0; index< projectData.length; index++){
         projectsNode.push(createEachProjectDiv(projectData[index]));
     }
-    for(let index =0; index< projectsNode.length; index=index+3){
+    for(let index =0; index< projectsNode.length; index=index+5){
             // create projectData Conatoiner containing 3 projects elements 
             let projectDataConatiner = document.createElement('div');
             // projectDataConatiner -> properties
-            projectDataConatiner.id =  index === 0?`projectDataConatiner${index}`:`projectDataConatiner${index/3}`
+            projectDataConatiner.id =  index === 0?`projectDataConatiner${index}`:`projectDataConatiner${index/5}`
             projectDataConatiner.classList.add('fade','projectDataConatiner');            
             projectDataConatiner.style.display = index === 0? 'block': 'none';
 
@@ -140,6 +135,14 @@ function createProjectContainer(){
             if(projectsNode[index+2]){
                           // adding element 3
                 projectDataConatiner.appendChild(projectsNode[index+2])
+            }
+            if(projectsNode[index+3]){
+                        // adding element 4
+                projectDataConatiner.appendChild(projectsNode[index+3])
+            }
+            if(projectsNode[index+4]){
+                        // adding element 5
+                projectDataConatiner.appendChild(projectsNode[index+4])
             }
             // adding projectContainer to carousel-container
             projectContainer.appendChild(projectDataConatiner); 
