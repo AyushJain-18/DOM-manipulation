@@ -22,7 +22,7 @@ let projectData =[
     {
         sno          : 5,
         projectName  : 'Video Player',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Video-player/'
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/video-player/'
     },
     {
         sno          : 6,
