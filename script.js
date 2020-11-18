@@ -51,8 +51,8 @@ let projectData =[
     },
     {
         sno          : 11,
-        projectName  : 'Mouse Mover',
-        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/moveMover/'
+        projectName  : 'Calculator',
+        projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/Calculator/'
     },
 ]
 
