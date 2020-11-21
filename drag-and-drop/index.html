@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    
+<link rel='icon' href='../home.svg' type='image/x-icon'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class='header'>Kanban Board</div>
+    <div class='board-container'>
+        <div class='board'>
+            <div class='boardHeading bg-color1'>Backlog</div>
+            <div class="board-item-container" id='backlogContainer'></div>
+            <div class='button-container'>
+                <div class="button" id='add1'><i class="fa fa-plus" aria-hidden="true"></i> <span class="add">Add</span> </div>
+                <div class="button" id='save1'>Save</div>
+            </div>
+            <div class='new-content-container' id='newTextContainer1'> 
+                <div class='new-content' contenteditable="true" id='newText1'></div>
+                <i   class="fa fa-times-circle" aria-hidden="true" title='close' id='close-content-box1'></i>
+            </div>
+        </div>
+        <div class='board'>
+            <div class='boardHeading bg-color2'>In Progress</div>
+            <div class="board-item-container"  id='progressContainer'></div>
+            <div class='button-container'>
+                <div class="button" id='add2'><i class="fa fa-plus" aria-hidden="true"></i> <span class="add">Add</span> </div>
+                <div class="button" id='save2'>Save</div>
+            </div>
+            <div class='new-content-container' id='newTextContainer2'> 
+                <div class='new-content' contenteditable="true" id='newText2' ></div>
+                <i class="fa fa-times-circle" aria-hidden="true" id='close-content-box2'></i>
+            </div>
+        </div>
+        <div class='board'>
+            <div class='boardHeading bg-color3'>Complete</div>
+            <div class="board-item-container"  id='completeContainer'></div>
+            <div class='button-container'>
+                <div class="button" id='add3'><i class="fa fa-plus" aria-hidden="true"></i> <span class="add">Add</span> </div>
+                <div class="button" id='save3'>Save</div>
+            </div>
+            <div class='new-content-container' id='newTextContainer3'> 
+                <div class='new-content' contenteditable="true" id='newText3' ></div>
+                <i class="fa fa-times-circle" aria-hidden="true" id='close-content-box3'></i>
+            </div>
+        </div>
+        <div class='board'>
+            <div class='boardHeading bg-color4'>On Hold</div>
+            <div class="board-item-container"  id='onHoldContainer'></div>
+            <div class='button-container'>
+                <div class="button" id='add4'><i class="fa fa-plus" aria-hidden="true"></i> <span class="add">Add</span> </div>
+                <div class="button" id='save4'>Save</div>
+            </div>
+            <div class='new-content-container' id='newTextContainer4'> 
+                <div class='new-content' contenteditable="true" id='newText4'></div>
+                <i class="fa fa-times-circle" aria-hidden="true" id='close-content-box4'></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
