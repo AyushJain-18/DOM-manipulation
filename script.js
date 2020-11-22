@@ -59,6 +59,11 @@ let projectData =[
         projectName  : 'To-do list',
         projectLink  : 'https://ayushjain-18.github.io/DOM-manipulation/drag-and-drop/'
     },
+    {
+        sno          : 12,
+        projectName  : 'Youtube downloader',
+        projectLink  : 'https://youtubedownloader18.herokuapp.com/'
+    },
 ]
 
 let eachProject         = document.querySelectorAll('#eachProject');
