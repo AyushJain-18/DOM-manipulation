@@ -1,4 +1,4 @@
-let projectData =[
+(()=>{let projectData =[
     {
         sno          : 1,
         projectName  : 'Bookmark',
@@ -212,7 +212,7 @@ previousButton.addEventListener('keydown',(event)=>{if(event.keyCode === 13){onP
 previousButton.style.visibility ='hidden'
 
 createProjectContainer();
-
+})();
 
 
 // function addEventListenerForAllLinks(){
@@ -226,4 +226,3 @@ createProjectContainer();
 //     }
 // }
 // addEventListenerForAllLinks();
-

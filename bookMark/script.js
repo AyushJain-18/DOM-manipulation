@@ -1,4 +1,4 @@
-const modal = document.getElementById('modal');
+(()=>{const modal = document.getElementById('modal');
 const modalShow = document.getElementById('show-modal');
 const modalClose = document.getElementById('close-modal');
 const bookmarkForm = document.getElementById('bookmark-form');
@@ -30,7 +30,7 @@ function buildBookmarks() {
     const closeIcon = document.createElement('i');
     closeIcon.classList.add('fas', 'fa-times');
     closeIcon.setAttribute('title', 'Delete Bookmark');
-    closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
+    closeIcon.addEventListener('click', ()=>deleteBookmark(`${url}`))
     // Favicon / Link Container
     const linkInfo = document.createElement('div');
     linkInfo.classList.add('name');
@@ -139,3 +139,4 @@ window.addEventListener('click', (e) =>
 
 // On Load, Fetch Bookmarks
 fetchBookmarks();
+})();
