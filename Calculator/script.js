@@ -1,3 +1,4 @@
+(()=>{
 const toogleButton = document.querySelector('[type="checkbox"]');
 const label        = document.getElementsByTagName('label')[0];
 const theme        = document.getElementById('theme');
@@ -123,3 +124,4 @@ dotButton.addEventListener('keydown',()=>{if(event.keyCode === 13){addDot()}})
 label.addEventListener('keydown',()=>{
         if(event.keyCode === 13){toogleButton.click()}
 });
+})();
