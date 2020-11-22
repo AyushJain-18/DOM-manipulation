@@ -1,7 +1,10 @@
+(()=>{
 let themeToogleButtonContainer = document.querySelector('div[class = "theme-switch-wrapper"]');
-let toogleIcon    = document.querySelector('span[id="toogle-icon"]');
-let toogleButton  = document.querySelector('input[type="checkbox"]');
-let nav           = document.getElementsByTagName('nav')[0];
+let headerContainer = document.getElementById('header-container');
+let toogleIcon      = document.querySelector('span[id="toogle-icon"]');
+let toogleButton    = document.querySelector('input[type="checkbox"]');
+let nav             = document.getElementsByTagName('nav')[0];
+
 
 
 let image1 = document.getElementById('image1');
@@ -13,12 +16,9 @@ let textBox= document.getElementById('text-box');
 toogleButton.addEventListener('change',(event)=> switchTheme(event));
 loadThemeBasedOnUserLastSelectedValue();
 window.onscroll =()=>{
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        nav.style.opacity = '0.2';
-        themeToogleButtonContainer.style.opacity ='0.2'
-    }else{
-            nav.style.opacity ='1';
-            themeToogleButtonContainer.style.opacity ='1'
+    headerContainer.style.opacity='1';
+    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+            headerContainer.style.opacity='0.2'
     }
 }
 
@@ -70,3 +70,4 @@ function lightMode(){
     image2.src = 'img/undraw_feeling_proud_light.svg'
     image3.src = 'img/undraw_conceptual_idea_light.svg'
 }
+})();
