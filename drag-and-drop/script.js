@@ -1,4 +1,4 @@
-// all ID variables 
+(()=>{// all ID variables 
 const boardsId = ['backlogContainer', 'progressContainer','completeContainer','onHoldContainer'];
 const saveButtonId        = 'save';
 const addButtonId         = 'add' ; 
@@ -112,7 +112,8 @@ function createListItems(boardId, textValue, listIndex){
     item.setAttribute('class','board-item');
     item.setAttribute('draggable',"true");
     item.setAttribute('id',`board-item-${boardId}-${listIndex}`);
-    item.setAttribute('ondragstart','onDragStart(event)');
+    // item.setAttribute('ondragstart','onDragStart(event)');
+    item.addEventListener('dragstart',()=>onDragStart(event))
 
     icon.setAttribute('class', 'fa fa-times');
     icon.setAttribute('aria-hidden','true' );
@@ -140,18 +141,24 @@ function onDragStart()  {   dragableElement = event.target;}
 function onDragOver()   {   event.preventDefault();}
 function onDragEnter()  {   event.target.classList.add('board-ondragHover')}
 function onDragLeave()  {   event.target.classList.remove('board-ondragHover')}
-function onDrop()       {   if(!event.target.classList.contains('board-item')){
-    event.target.appendChild(dragableElement);
-    event.target.classList.remove('board-ondragHover');
-    loadDataToLocalStorage();
+function onDrop(){   
+    if(!event.target.classList.contains('board-item')){
+            event.target.appendChild(dragableElement);
+            event.target.classList.remove('board-ondragHover');
+            loadDataToLocalStorage();
         }
    }
 
 function addDragFunctionsToDragContainer(containerElement){
-    containerElement.setAttribute('ondragover',  'onDragOver()');
-    containerElement.setAttribute('ondragenter', 'onDragEnter()');
-    containerElement.setAttribute('ondragleave', 'onDragLeave()');
-    containerElement.setAttribute('ondrop'     , 'onDrop()');
+    // containerElement.setAttribute('ondragover',  'onDragOver()');
+    // containerElement.setAttribute('ondragenter', 'onDragEnter()');
+    // containerElement.setAttribute('ondragleave', 'onDragLeave()');
+    // containerElement.setAttribute('ondrop'     , 'onDrop()');
+
+    containerElement.addEventListener('dragover', ()=> onDragOver());
+    containerElement.addEventListener('dragenter',()=> onDragEnter());
+    containerElement.addEventListener('dragleave',()=> onDragLeave());
+    containerElement.addEventListener('drop',     ()=> onDrop());
 }
 // event listeners 
 // 1. for save buttons 
@@ -170,3 +177,4 @@ addDragFunctionsToDragContainer(completeContainer);
 addDragFunctionsToDragContainer(onHoldContainer);
 
 loadUIBasedOnLocalStorageData();
+})();
