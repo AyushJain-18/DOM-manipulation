@@ -1,3 +1,4 @@
+(()=>{
 const countdownForm  = document.getElementById('countdownForm');
 const inputContainer = document.getElementById('input-container');
 const dateEl         = document.getElementById('date-picker');
@@ -58,13 +59,13 @@ function updateDOM() {
 
 function updateCountdownOnFormSubmit(e) {
   e.preventDefault();
+  countdownTitle = e.srcElement[0].value;
+  countdownDate = e.srcElement[1].value;
   // Check if no date entered
   if (countdownDate === '') {
     alert('Please select a date for the countdown.');
   } else {
     // Set title and date, save to localStorage
-      countdownTitle = e.srcElement[0].value;
-      countdownDate = e.srcElement[1].value;
       savedCountdown = {
         title: countdownTitle,
         date: countdownDate,
@@ -108,3 +109,4 @@ completeBtn.addEventListener('click', startANewCountdown);
 
 // On Load, check localStorage
 restorePreviousCountdownFromLocalStorage();
+})();
