@@ -1,3 +1,4 @@
+(()=>{
 let menuBar =  document.getElementById('menu-bars');
 let nav     = document.getElementById('overlay');
 let unoderedList = document.getElementsByTagName('ul'); 
@@ -16,3 +17,4 @@ menuBar.addEventListener('keydown', (event)=>{if(event.keyCode === 13){toogleMen
 [...unoderedList].forEach(listItem =>{
     listItem.addEventListener('click',toogleMenuBar );
 })
+})();

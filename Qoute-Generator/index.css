@@ -105,15 +105,21 @@ body{
 }
 
 @media screen and (max-width: 600px){
+    body{font-size: 20px;}
     .contentContainer{
         margin: 5vh 5vw ;
         width: 85vw;
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        min-height: 50vw;
+        height: fit-content;
+        padding-bottom: 20px;
     }
     .authorAndBtnContainer{
-        margin-top: 10px;
+        margin-top : 10px;
+        min-height : 200px;
+        height     : fit-content;
+        width      :  80vw;
     }
     .buttonContainer{
         width: 60vw;
@@ -122,6 +128,6 @@ body{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        color: blue;
+        color: red;
     }
 }

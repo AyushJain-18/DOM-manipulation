@@ -1,9 +1,11 @@
+(()=>{
 // declaring constant here
 const qouteText         =   document.getElementById('qoute-text');
 const author            =   document.getElementById('author');
 const tweetButton       =   document.getElementById('tweet-button');
 const qouteContainer    =   document.getElementById('quote-container');
 const loader            =   document.getElementById('loader');
+const loadNewQoute      =   document.getElementById('qoute-generator'); 
 
 
 // get qoute 
@@ -57,5 +59,7 @@ function endLoadingSpinner(){
 
 // Event listener
 tweetButton.addEventListener('click',shareOnTwitter);
+loadNewQoute.addEventListener('click',loadDataToUI)
 
 loadDataToUI();
+})();
