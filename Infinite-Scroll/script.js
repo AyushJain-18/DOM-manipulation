@@ -1,3 +1,4 @@
+(()=>{
 const imageContainer = document.getElementById('imageContainer');
 const dataContainer = document.getElementById('dataContainer');
 const allPhotos = [];
@@ -61,7 +62,7 @@ function hideLoader(){
 
 async function getPhotoFromUnsplash(){
     showLoader();
-    let count    =  ispageLoadForOnce?30: 5;
+    let count    =  ispageLoadForOnce?30: 6;
     let apikey   =  'S2DA48cD6oeXZW_2UY5w7I4KZNuw3ezmi-ODHH9wOaQ';
     let domain   =  'https://api.unsplash.com/photos/random';
     let finalUrl =  `${domain}?client_id=${apikey}&count=${count}&orientation=portrait&fit=crop&min-h=500`;
@@ -136,3 +137,4 @@ function renderPhoto(){
 
 
 getPhotoFromUnsplash();
+})();
